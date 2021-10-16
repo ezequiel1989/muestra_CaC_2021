@@ -1,0 +1,41 @@
+    #principal {
+        height: 100vh;
+        padding: 0%;
+        background-blend-mode: overlay;
+        background-image: url(img/ba1.jpg);
+        /*background-blend-mode: overlay;*/
+        background-size: cover;
+        background-position: center;
+        background-color: black;
+    }
+    
+    #textoppal {
+        margin-top: 10%;
+        /*padding: 0;*/
+        /*max-width: 50%;*/
+        /*margin-right: 0;*/
+        /*align-content: flex-end;
+    align-items: flex-end;*/
+    }
+    
+    #btn_comprar {
+        background-color: #29a744;
+        border-color: #29a744;
+    }
+    
+    #section2 p {
+        font-size: 12px;
+        font-weight: 200;
+    }
+    
+    #btn_enviar button {
+        background-color: #96c93e;
+        border-color: #96c93e;
+    }
+    
+    #footer {
+        background-color: #1e516e !important;
+        font-size: 12px;
+        font-weight: 600;
+        text-align: center;
+    }
