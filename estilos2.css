@@ -18,6 +18,36 @@
     align-items: flex-end;*/
     }
     
+    #card1 {
+        border: 1px solid #007BFF;
+    }
+    
+    #card2 {
+        border: 1px solid #17A2B8;
+    }
+    
+    #card3 {
+        border: 1px solid #F2A007;
+    }
+    
+    #tickets {
+        max-width: 60%;
+        text-align: center;
+    }
+    
+    #tickets h5 {
+        margin-top: 15px;
+    }
+    
+    #tickets h6 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    #tickets p {
+        margin-top: 15px;
+    }
+    
     #btn_comprar {
         background-color: #29a744;
         border-color: #29a744;
@@ -31,6 +61,17 @@
     #btn_enviar button {
         background-color: #96c93e;
         border-color: #96c93e;
+    }
+    
+    #total_a_pagar {
+        color: #2080cf;
+        background-color: #cce5ff;
+        height: 50px;
+        text-align: left;
+        padding: 5px;
+        padding-left: 15px;
+        border-radius: 3px;
+        align-items: center;
     }
     
     #footer {

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos2.css">
+    <title>Prueba2 CaC</title>
+</head>
+
+<body>
+
+    <!--NavBar-->
+
+    <div class="container-fluid bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <div>
+                    <a class="navbar-brand" href="index.html">Conf Bs As</a>
+                </div>
+                <div class="d-flex align-content-end">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">La conferencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Los oradores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">El lugar y la fecha</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Conviértete en orador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#" style="color: #309145;">Comprar tickets</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <br>
+    <br>
+
+    <!--Cards-->
+
+    <section class="container" id="tickets">
+        <div class="row row-cols-1 row-cols-md-3 g-1">
+            <div class="col">
+                <div class="card h-auto">
+                    <div class="card-body" id="card1">
+                        <h5 class="card-title">Estudiante</h5>
+                        <p class="card-title">Tiene un descuento</p>
+                        <h5 class="card-title">80%</h5>
+                        <h6 class="card-title form-text text-center">*presentar documentación</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-auto">
+                    <div class="card-body" id="card2">
+                        <h5 class="card-title">Trainee</h5>
+                        <p class="card-title">Tiene un descuento</p>
+                        <h5 class="card-title">50%</h5>
+                        <h6 class="card-title form-text text-center">*presentar documentación</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body" id="card3">
+                        <h5 class="card-title">Junior</h5>
+                        <p class="card-title">Tiene un descuento</p>
+                        <h5 class="card-title">15%</h5>
+                        <h6 class="card-title form-text text-center">*presentar documentación</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Form-->
+
+    <br>
+    <div class="container-fluid text-center col-sm-6">
+        <p class="m-0 fs-6 fw-lighter">VENTA</p>
+        <h2 class="m-1">VALOR DEL TICKET $200</H2>
+        <br>
+
+        <form action="">
+            <div class="container-fluid">
+                <div class="row g-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <input type="email" class="form-control" id="correo1" placeholder="Correo">
+                </div>
+            </div>
+            <br>
+            <!--nombre apellido correo-->
+
+            <div class="container-fluid">
+                <div class="row g-3">
+                    <div class="col">
+                        <label for="cantidad" class="form-label">Cantidad</label>
+                        <input id="op_canidad" type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad" name="op_cantidad">
+                        <!--cantidad-->
+                    </div>
+                    <div class="col">
+                        <label for="Categoría" class="form-label">Categoría</label>
+                        <select class="form-select" aria-label="Categoría" id="op_categoria"> <!--categoria-->
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Trainee">Trainee</option>
+                        <option value="Junior">Junior</option>
+                      </select>
+                    </div>
+                    <div class="d-grid">
+                        <p class="d-grid" id="total_a_pagar">Total a pagar: $</p>
+                    </div>
+                    <!--total a pagar-->
+                </div>
+            </div>
+    </div>
+    <div class="form-text container-fluid col-sm-6">
+        <div class="row g-3 m-0">
+            <div class="col" id="btn_enviar">
+                <div class="d-grid">
+                    <button type="reset" class="btn btn-success" id="btn_borrar">Borrar</button>
+                    <!--borrar-->
+                </div>
+            </div>
+            <div class="col" id="btn_enviar">
+                <div class="d-grid">
+                    <button type="button" class="btn btn-success" id="btn_resumen">Resumen</button>
+                    <!--resumen-->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </form>
+    <br>
+
+    <!--Footer-->
+
+    <div class="container-fluid bg-dark" id="footer">
+        <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
+            <div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-1 align-items-center justify-content-between">
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="#">Preguntas<br>frecuentes</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="#">Contáctanos</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="#">Prensa</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="#">Conferencias</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="#">Términos y<br>condiciones</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="#">Privacidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Estudiantes</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ " crossorigin="anonymous "></script>
+        <script src="funciones.js"></script>
+</body>
+
+</html>
